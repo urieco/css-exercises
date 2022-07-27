@@ -6,7 +6,7 @@
     width: 200px;
     height: 400px;
 }
-.original.avatar.distorted {
+.original .distorted {
     display: flex;
     flex-direction: row;
 }
