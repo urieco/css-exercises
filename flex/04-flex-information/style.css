@@ -10,6 +10,26 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center; /*could have put in the .body {} to reduce repetition*/
+  margin: 32px;
+}
+.picture {
+  display: flex;
+  justify-content: space-between;
+  gap: 52px;
+  margin: 32px;
+}
+.description {
+  display: flex;
+  gap: 52px;
+  justify-content: space-between;
+}
+/*better solution: wrap up the content in a .container class, then
+.container {justify-content: center; gap: 52px; display: flex;*/
+.text {
+  flex-wrap: wrap;
+  width: 200px;
+  text-align: center;
 }
 
 /* do not edit this footer */

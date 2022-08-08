@@ -20,6 +20,8 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 15px;
 }
 
 .icon {
@@ -33,6 +35,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1 0 auto; /*or flex-shrink: 0; */
+  margin-right: 15px; /*could have used .modal {gap: 16px;} to do the trick*/
+}
+
+.first-line {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.header {
+  font-size: 20px;
 }
 
 .close-button {
@@ -46,11 +60,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto; /*or justify-content: space-between; since there are only two items sharing the available space*/
 }
 
 button {
   padding: 8px 16px;
   border-radius: 8px;
+  margin-top: 15px;
 }
 
 button.continue {

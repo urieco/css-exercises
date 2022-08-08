@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /*view the page as three flex-items on top of each other*/
 }
 
 img {
@@ -13,9 +16,11 @@ img {
 
 button {
   font-family: Roboto, sans-serif;
+  font-weight: bold;
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -24,4 +29,34 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+.header { /* You could use .header, .footer {} to shorten the code */
+  display: flex;
+  justify-content: space-between; /*.left-links and .right-links are two flex items*/
+}
+.left-links, .right-links { 
+  display: flex;
+  gap: 12px;
+  margin: 0 6px;
+  padding: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center; /*solution > missing flex: 1; */
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: initial; /*or color: inherit;
+  SOLUTION: #666 */
+}
+.footer {
+  display: flex;
+  background-color: #eeeeee;
+  justify-content: space-between;
 }
